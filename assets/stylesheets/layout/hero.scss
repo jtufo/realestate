@@ -1,0 +1,286 @@
+// ==========================================================================
+// HERO
+// ==========================================================================
+
+.hero {
+  $bg-opacity: rgba(0, 0, 0, 0.65);
+  $border-opacity: 1px solid rgba(255, 255, 255, 0.25);
+  $img-break-screen: 985px;
+  height: 560px;
+  line-height: 0;
+  position: relative;
+
+  @media (min-width: $img-break-screen) {
+    height: 660px;
+  }
+
+  .hero__background {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .hero-slideshow {
+    img {
+      height: 100%;
+      max-width: inherit;
+      width: auto;
+      zoom: 55%;
+
+      @media (min-width: 840px) {
+        height: auto;
+        width: 100%;
+        zoom: 1;
+      }
+    }
+  }
+
+  .hero__content {
+    $hero-content-height: 135px;
+    bottom: 0;
+    color: #ffffff;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+
+    @media (min-width: $breakpoint-lg) {
+      background-color: $bg-opacity;
+      height: $hero-content-height;
+    }
+
+    .hero__content__top {
+      border-bottom: $border-opacity;
+      padding: 24px 0;
+
+      @media (max-width: $breakpoint-lg-max) {
+        border: 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+      }
+    }
+
+    input[type= "radio"],
+    .tab-content {
+      display: none;
+    }
+
+    input[type= "radio"]:checked {
+      + .tabs-label {
+        color: $color-orange;
+
+        i.fa-caret-right::before {
+          content: "\f0d7";
+
+          @media (min-width: $breakpoint-lg) {
+            content: "\f0d8";
+          }
+        }
+      }
+    }
+
+    .tabs-label {
+      color: inherit;
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      width: 33%;
+
+      @media (max-width: $breakpoint-lg-max) {
+        background: $bg-opacity;
+        display: block;
+        margin-top: 10px;
+        padding: 20px;
+        width: 100%;
+      }
+
+      .tabs-label__icon {
+        position: absolute;
+        right: 38px;
+        top: 24px;
+
+        @media (min-width: $breakpoint-lg) {
+          top: 6px;
+        }
+      }
+    }
+
+    .tab-content {
+      background-color: $bg-opacity;
+      border-top: $border-opacity;
+      padding: 26px 20px 10px;
+      text-align: center;
+      width: 100%;
+
+      @media (min-width: $breakpoint-lg) {
+        @include absolute-center(700px);
+        border: 1px solid #000000;
+        bottom: $hero-content-height;
+        padding: {
+          left: 35px;
+          right: 35px;
+        }
+        position: absolute;
+      }
+
+      @media (min-width: 880px) {
+        @include absolute-center(940px);
+      }
+
+      .tab-content__title {
+        color: #ffffff;
+        text-align: left;
+      }
+
+      ul {
+        @extend .clearfix;
+        text-align: left;
+
+        a {
+          color: #bfbfbf;
+
+          &:hover {
+            color: $color-orange;
+          }
+        }
+      }
+    }
+
+    .hero__content__bottom {
+      padding-top: 3px;
+
+      a {
+        &::before {
+          color: #ffffff;
+          content: "|";
+          margin: 0 4px;
+        }
+      }
+    }
+
+    // Sass "For" Loop to display content related to checked tab
+    @for $i from 1 through 3 {
+      input[type="radio"]:checked:nth-of-type(#{$i}) ~ .tab-content:nth-of-type(#{$i}) {
+        display: block;
+      }
+    }
+  }
+
+  // Slideshow
+  .slides {
+    * {
+      @include vendor-prefix(user-select, none);
+    }
+
+    input[type="radio"] {
+      display: none;
+
+      &:checked + .slides__container {
+        .slide {
+          @include vendor-prefix(transition, opacity 1s ease-in-out);
+          opacity: 1;
+        }
+
+        .slide-nav {
+          label {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .slides__container {
+      display: block;
+
+      .slide {
+        @include vendor-prefix(transition, all .7s ease-in-out);
+        display: block;
+        height: 100%;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+
+        &:hover + .slide-nav {
+          label {
+            opacity: 1;
+          }
+        }
+      }
+
+      .slide-nav {
+        label.slide-nav__controls {
+          $slide-nav-height: 108px;
+          $border-radius: 20px;
+          @include absolute-center-height($slide-nav-height);
+          @include vendor-prefix(border-radius, 0 $border-radius $border-radius 0);
+          @include vendor-prefix(transition, opacity .2s);
+          background-color: rgba(0, 0, 0, .5);
+          color: #ffffff;
+          content: "";
+          cursor: pointer;
+          display: none;
+          font-size: 140px;
+          line-height: 70px;
+          opacity: .4;
+          text-align: center;
+          width: 64px;
+          z-index: 9;
+
+          @media (max-width: $breakpoint-lg-max) {
+            display: none !important;
+          }
+
+          &:hover {
+            opacity: 1;
+          }
+
+          &.next {
+            @include vendor-prefix(border-radius, $border-radius 0 0 $border-radius);
+            right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  // Show progress
+  @for $i from 1 through 3 {
+    input#img-#{$i}:checked ~ .nav-progress {
+      label#progress-dot-#{$i} {
+        background: $color-orange;
+      }
+    }
+  }
+
+  .nav-progress {
+    bottom: 9px;
+    display: block;
+    height: 11px;
+    position: absolute;
+    right: 100px;
+    text-align: center;
+    width: auto;
+    z-index: 999;
+
+    .nav-progress__dot {
+      @include vendor-prefix(border-radius, 50%);
+      background-color: #ffffff;
+      display: inline-block;
+      height: 11px;
+      margin: 0 4px;
+      position: relative;
+      top: -5px;
+      width: 11px;
+
+      &:hover {
+        background: $color-orange;
+        cursor: pointer;
+      }
+    }
+  }
+}

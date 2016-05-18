@@ -1,0 +1,44 @@
+// ==========================================================================
+// HOME PAGE
+// ==========================================================================
+
+body.home-page {
+  .section {
+    // About Section
+    &.about-us {
+      .panel-body {
+        line-height: 24px;
+      }
+    }
+
+    // Search Section
+    &.search-area {
+      padding: 30px 0;
+
+      @media (max-width: $breakpoint-md-max) {
+        padding: 12px 0;
+      }
+
+      .section-title {
+        margin-bottom: 20px;
+      }
+
+      .src-button {
+        width: 470px;
+      }
+    }
+
+    // Discovery Section
+    &.discovery-container {
+      ul {
+        text-align: center;
+
+        @media (max-width: $breakpoint-md-max) {
+          li {
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}

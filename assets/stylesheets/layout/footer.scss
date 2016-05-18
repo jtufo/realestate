@@ -1,0 +1,123 @@
+// ==========================================================================
+// FOOTER
+// ==========================================================================
+
+footer {
+  background: #171717;
+
+  // Global Footer
+  @media (min-width: $breakpoint-md) {
+    text-align: center;
+  }
+
+  hr {
+    border-color: #515151;
+    margin: 0;
+  }
+
+  ul {
+    li {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  // Nav Section
+  nav.footer-nav {
+    padding: 26px 0;
+
+    a {
+      color: $color-gray-dark;
+      font-weight: 700;
+      padding: 0 14px;
+      text-transform: uppercase;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  // Social Network Section
+  .footer-social-row {
+    @media (max-width: $breakpoint-md) {
+      padding-top: 20px;
+    }
+
+    li {
+      font-size: 13px;
+      padding: 10px 2% 10px;
+
+      @media (max-width: $breakpoint-md) {
+        padding: {
+          left: 1%;
+          right: 1%;
+        }
+      }
+
+      img {
+        display: block;
+        margin-bottom: 12px;
+      }
+
+      a {
+        color: #b7b7b7;
+        text-align: center;
+      }
+    }
+  }
+
+  // Location Section
+  .footer-location-row {
+    color: #ffffff;
+    font-size: 28px;
+
+    .small-text {
+      font-size: 20px;
+    }
+  }
+
+  // Contact Section
+  .footer-contact-info {
+    font-size: 22px;
+    font-weight: 700;
+
+    @media (max-width: $breakpoint-md-max) {
+      font-size: 18px;
+    }
+
+    li {
+      padding: 0 30px;
+      text-align: left;
+
+      @media (max-width: $breakpoint-lg) and (min-width: $breakpoint-md) {
+        text-align: center;
+      }
+    }
+
+    i {
+      font-size: 26px;
+      padding-right: 3px;
+    }
+
+    .contact {
+      color: #ffffff;
+      display: inline;
+
+      .home-address {
+        font: {
+          size: 16px;
+          weight: normal;
+        }
+        padding-left: 30px;
+      }
+    }
+  }
+
+  // Copyright Section
+  .copyright {
+    color: #616161;
+    font-size: 13px;
+    padding: 21px 0;
+  }
+}

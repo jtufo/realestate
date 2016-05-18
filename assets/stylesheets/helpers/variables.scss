@@ -1,0 +1,56 @@
+// ==========================================================================
+// COLOR VARIABLES
+// ==========================================================================
+
+$color-black: #4b4b4b;
+$color-gray: #88939a;
+$color-gray-light: #ededed;
+$color-gray-dark: #909090;
+$color-purple: #000333;
+$color-orange: #e75640;
+$color-white: #f4f4f4;
+
+// ==========================================================================
+// FONT VARIABLES
+// ==========================================================================
+
+$browser-context: 16px;
+$font-primary: 'Open Sans', sans-serif;
+$font-secondary: 'Oswald', sans-serif;
+$font-size-base: 14px;
+$line-height: 1.500; // Based on 14px base
+
+// ==========================================================================
+// GRID VARIABLES
+// ==========================================================================
+
+$breakpoint-sm: 321px;
+$breakpoint-md: 481px;
+$breakpoint-lg: 769px;
+
+$breakpoint-sm-max: ($breakpoint-sm - 1);
+$breakpoint-md-max: ($breakpoint-md - 1);
+$breakpoint-lg-max: ($breakpoint-lg - 1);
+
+$breakpoints: (
+	"sm": $breakpoint-sm,
+	"md": $breakpoint-md,
+	"lg": $breakpoint-lg
+);
+
+$grid-columns: 12;
+$grid-space: 10px;
+
+// ==========================================================================
+// FORM VARIABLES
+// ==========================================================================
+
+$border-dotted: 1px dotted #cdcdcd;
+
+// ==========================================================================
+// FORM VARIABLES
+// ==========================================================================
+
+$input-height: 40px;
+$input-border: #cccccc;
+$select-dropdown: #b9b9b9;

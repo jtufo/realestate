@@ -1,0 +1,112 @@
+// ==========================================================================
+// This stylesheet contains form elements.
+// ==========================================================================
+
+select,
+textarea,
+input[type="text"] {
+  @include appearance(none);
+  @include vendor-prefix(box-shadow, 0 1px 2px 0 rgba(0, 0, 0, 0.05));
+  border-radius: 2px;
+  color: $color-black;
+  display: inline-block;
+  border: 1px solid $input-border;
+  font: {
+    family: Arial, Helvetica, sans-serif;
+    size: 15px;
+    weight: bold;
+  }
+  height: $input-height;
+  line-height: $input-height;
+  margin-bottom: 18px;
+  padding: 4px 6px 4px 14px;
+  vertical-align: middle;
+  width: 100%;
+
+  @media (max-width: $breakpoint-md-max) {
+    margin-bottom: 12px;
+  }
+
+  &:focus {
+    @include vendor-prefix(box-shadow, none);
+    border-color: #afafaf;
+    font-weight: bold;
+    outline: 0;
+  }
+
+  &::-webkit-input-placeholder {
+    color: inherit;
+  }
+
+  &::placeholder {
+    color: inherit;
+  }
+
+  // Removes Chrome default yellow background on inputs
+  &:-webkit-autofill {
+    @include vendor-prefix(box-shadow, 0 0 0px 1000px white inset);
+  }
+}
+
+textarea {
+  height: auto;
+  line-height: normal;
+  padding: {
+    bottom: 10px;
+    top: 10px;
+  }
+  resize: none;
+}
+
+.select {
+  position: relative;
+
+  &::before {
+    color: $select-dropdown;
+    content: "\f0d7";
+    font: {
+      family: FontAwesome;
+      size: 20px;
+    }
+    height: 100%;
+    line-height: $input-height;
+    pointer-events: none;
+    position: absolute;
+    right: 5px;
+    text-align: center;
+    top: 0;
+    width: 30px
+  }
+}
+
+select {
+  &::-ms-expand {
+    // Hide browser dropdown arrow in IE10
+    display: none;
+  }
+
+  line-height: normal;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  @include appearance(none);
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.input-addon {
+    height: 100%;
+    position: absolute;
+    right: 11px;
+    top: 0;
+
+  > button,
+    a,
+    input[type="button"] {
+    height: 40px;
+    width: 46px;
+  }
+}

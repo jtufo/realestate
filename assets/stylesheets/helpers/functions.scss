@@ -1,0 +1,4 @@
+@function calculateRem($size) {
+  $remSize: $size / $browser-context;
+  @return $remSize * 1rem;
+}

@@ -1,0 +1,110 @@
+// ==========================================================================
+// HEADER
+// ==========================================================================
+
+header {
+  $header-padding: 35px;
+  padding: 15px 0;
+  text-transform: uppercase;
+
+  @media (min-width: $breakpoint-lg) {
+    border-top: 4px solid $color-white;
+    padding: $header-padding 0 22px;
+  }
+
+  // Desktop Logo
+  .logo {
+    width: 33%;
+  }
+
+  // Mobile Nav
+  .logo-mobile,
+  .mobile-nav {
+    @include vertical-align;
+  }
+
+  .logo-mobile {
+    img {
+      @media (max-width: $breakpoint-md-max) {
+        zoom: 70%;
+      }
+    }
+  }
+
+  .mobile-nav {
+    padding-right: 5px;
+  }
+
+  .mobile-login {
+    padding-top: 7px;
+
+    @media (max-width: $breakpoint-md-max) {
+      padding-top: 2px;
+    }
+  }
+
+  // Desktop Nav
+  .desktop-nav-group {
+    margin-top: -$header-padding;
+    position: relative;
+    text-align: right;
+
+    @media (max-width: $breakpoint-lg-max) {
+      @include vertical-align;
+      margin-top: 0;
+    }
+
+    a {
+      color: $color-gray-dark;
+      display: block;
+    }
+
+    ul {
+      @include inline-list;
+    }
+
+    .account-nav {
+      @include vendor-prefix(border-radius, 0 0 6px 6px);
+      background: $color-white;
+      display: inline-block;
+      font-size: 11px;
+      padding: 6px;
+      text-align: center;
+
+      a {
+        color: #696969;
+        padding: 0 6px;
+      }
+
+      i {
+        color: $color-orange;
+        padding-right: 2px;
+      }
+    }
+
+    .social-nav {
+      margin: 15px 0 12px;
+
+      li {
+        padding-left: 5px;
+      }
+
+      .phone {
+        color: $color-orange;
+        font-size: 18px;
+        padding-right: 5px;
+        vertical-align: top;
+      }
+    }
+
+    .main-nav {
+      a {
+        font: {
+          size: 14px;
+          weight: 700;
+        }
+        padding: 0 8px;
+      }
+    }
+  }
+}

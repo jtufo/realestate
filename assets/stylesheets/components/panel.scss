@@ -1,0 +1,100 @@
+// ==========================================================================
+// This stylesheet contains panel component classes
+// ==========================================================================
+
+.panel-item,
+.panel-item-link {
+  display: block;
+}
+
+.panel-item-link {
+  .panel-body__title:hover {
+    color: $color-orange;
+  }
+}
+
+.panel-img {
+  position: relative;
+
+  iframe,
+  img,
+  video {
+    border: 5px solid $color-white;
+    width: 100%;
+  }
+}
+
+.panel-body {
+  padding: 15px 0;
+}
+
+.panel-body__title {
+  margin-bottom: 15px;
+  text-transform: uppercase;
+
+  @media (max-width: $breakpoint-lg-max) {
+    margin-bottom: 10px;
+  }
+}
+
+// Style 2 - Tours
+.panel-item--tour {
+  @include vendor-prefix(box-shadow, 0px 0px 3px 0px rgba(0, 0, 0, 0.2));
+  background: #ffffff;
+  width: 100%;
+
+  .panel-body {
+    padding: {
+      left: 15px;
+      right: 15px;
+    }
+  }
+
+  .panel-img {
+    img {
+      border: none;
+    }
+  }
+
+  .panel-body__title {
+    margin-bottom: 0;
+  }
+
+  .panel-listing {
+    color: $color-gray-dark;
+    margin-bottom: 10px;
+
+    &.info {
+      font-family: Arial, "sans-serif";
+      font-size: 9px;
+    }
+  }
+}
+
+// Panel List Group
+.panel-group-tour {
+  height: auto;
+
+  li {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .panel-group-tour {
+    display: flex;
+    flex-flow: wrap;
+    min-height: 326px;
+
+    li {
+      display: flex;
+    }
+  }
+}
+
+// Panel List Social
+.panel-group-social {
+  li {
+    margin: 0 -5px 5px;
+  }
+}

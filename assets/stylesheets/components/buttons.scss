@@ -1,0 +1,41 @@
+// ==========================================================================
+// This stylesheet contains button component classes
+// ==========================================================================
+
+.button {
+  @include vendor-prefix(border-radius, 2px);
+  border: 0;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font: {
+    family: $font-secondary;
+    size: 17px;
+    weight: 700;
+  }
+  outline: 0;
+  padding: 7px 16px 6px;
+  text: {
+    align: center;
+    decoration: none;
+    transform: uppercase;
+  }
+  transition: 0.3s;
+  width: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+.button--full {
+  width: 100%;
+}
+
+.button--orange {
+  @include button-style($btn-color: $color-orange);
+}
+
+.button--icon {
+  i {
+    padding-right: 8px;
+    vertical-align: 8%;
+  }
+}

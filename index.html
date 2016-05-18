@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href='assets/stylesheets/main.css' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' rel='stylesheet'>
+  </head>
+  <body class='home-page'>
+    <!-- Banner -->
+    <header>
+      <div class='contain-content clearfix'>
+        <a class='mobile-nav hide-lg' href='#'>
+          <i class='fa fa-bars fa-lg'></i>
+        </a>
+        <a class='logo pull-left show-lg' href='#'>
+          <img src='assets/images/header/logo.png'>
+        </a>
+        <a class='logo-mobile pull-left hide-lg' href='#'>
+          <img src='assets/images/header/logo-sm.png'>
+        </a>
+        <a class='mobile-login link-reset hide-lg pull-right' href='#'>
+          Login
+        </a>
+        <nav class='desktop-nav-group pull-right'>
+          <div class='account-nav show-lg-inline'>
+            <ul>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-cog'></i>
+                  Account
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <i class='fa fa-unlock'></i>
+                  Logout
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class='social-nav show-lg'>
+            <ul>
+              <li class='phone'>
+                +1 (408) 555 5555
+              </li>
+              <li>
+                <a href='#'>
+                  <img src='assets/images/header/rss.png'>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src='assets/images/header/linkedin.png'>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src='assets/images/header/youtube.png'>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src='assets/images/header/facebook.png'>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src='assets/images/header/pinterest.png'>
+                </a>
+              </li>
+              <li>
+                <a href='#'>
+                  <img src='assets/images/header/twitter.png'>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class='main-nav'>
+            <ul>
+              <li class='hide-xs'>
+                <a href='#'>
+                  Properties
+                </a>
+              </li>
+              <li class='hide-xs'>
+                <a href='#'>
+                  Communities
+                </a>
+              </li>
+              <li class='show-md-inline show-lg-inline'>
+                <a href='#'>
+                  Services
+                </a>
+              </li>
+              <li class='show-md-inline show-lg-inline'>
+                <a href='#'>
+                  Our Team
+                </a>
+              </li>
+              <li class='show-lg-inline'>
+                <a href='#'>
+                  Contact
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- /.contain-content -->
+    </header>
+    <main>
+      <!-- Start Hero -->
+      <div class='hero'>
+        <div class='hero__background'>
+          <div class='hero-slideshow'>
+            <ul class='slides'>
+              <input checked='' id='img-1' name='radio-btn' type='radio'>
+              <li class='slides__container'>
+                <div class='slide'>
+                  <img src='assets/images/slideshow/hero-img-2.jpg'>
+                </div>
+                <div class='slide-nav'>
+                  <label class='slide-nav__controls prev' for='img-3'>
+                    &#x2039;
+                  </label>
+                  <label class='slide-nav__controls next' for='img-2'>
+                    &#x203a;
+                  </label>
+                </div>
+              </li>
+              <input id='img-2' name='radio-btn' type='radio'>
+              <li class='slides__container'>
+                <div class='slide'>
+                  <img src='assets/images/slideshow/hero-img-3.jpg'>
+                </div>
+                <div class='slide-nav'>
+                  <label class='slide-nav__controls prev' for='img-1'>
+                    &#x2039;
+                  </label>
+                  <label class='slide-nav__controls next' for='img-3'>
+                    &#x203a;
+                  </label>
+                </div>
+              </li>
+              <input id='img-3' name='radio-btn' type='radio'>
+              <li class='slides__container'>
+                <div class='slide'>
+                  <img src='assets/images/slideshow/hero-img-2.jpg'>
+                </div>
+                <div class='slide-nav'>
+                  <label class='slide-nav__controls prev' for='img-2'>
+                    &#x2039;
+                  </label>
+                  <label class='slide-nav__controls next' for='img-1'>
+                    &#x203a;
+                  </label>
+                </div>
+              </li>
+              <div class='nav-progress show-lg'>
+                <label class='nav-progress__dot' for='img-1' id='progress-dot-1'></label>
+                <label class='nav-progress__dot' for='img-2' id='progress-dot-2'></label>
+                <label class='nav-progress__dot' for='img-3' id='progress-dot-3'></label>
+              </div>
+            </ul>
+          </div>
+          <!-- Hero Content -->
+          <div class='hero__content'>
+            <!-- Hero Tabs -->
+            <div class='hero__content__top'>
+              <div class='contain-content'>
+                <!-- Hero Tabs -- Areas Tab -->
+                <input class='areas-tab' id='areas-tab' name='tabs' type='radio'>
+                <label class='tabs-label h2' for='areas-tab'>
+                  Areas
+                  <i class='fa fa-caret-right tabs-label__icon'></i>
+                </label>
+                <div class='tab-content for-areas'>
+                  <h1 class='tab-content__title'>
+                    <div class='show-md show-lg'>
+                      Explore Areas in the South Shore
+                    </div>
+                    <div class='hide-md hide-lg'>
+                      Explore Areas
+                    </div>
+                  </h1>
+                  <div class='row'>
+                    <ul class='u-space-top-3'>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Braintree
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Duxbury
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Hull
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Marshfield
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Quincy
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Weymouth
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Cohasett
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Hingham
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Kingston
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-sm hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Hingham
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-sm hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Kingston
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-sm-4 u-space-4 show-lg'>
+                        <a class='h5 text-normal' href='#'>
+                          Cohasett
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Hero Tabs -- Neighborhoods Tab -->
+                <input class='neighborhoods-tab' id='neighborhoods-tab' name='tabs' type='radio'>
+                <label class='tabs-label h2' for='neighborhoods-tab'>
+                  Neighborhoods
+                  <i class='fa fa-caret-right tabs-label__icon'></i>
+                </label>
+                <div class='tab-content for-neighborhoods'>
+                  <h1 class='tab-content__title'>
+                    <div class='show-md show-lg'>
+                      Explore Neighborhoods in the South Shore
+                    </div>
+                    <div class='hide-md hide-lg'>
+                      Explore Neighborhoods
+                    </div>
+                  </h1>
+                  <div class='row'>
+                    <ul class='u-space-top-3'>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Braintree
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Duxbury
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Hull
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Marshfield
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Quincy
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Weymouth
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Cohasett
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Hingham
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Kingston
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-sm hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Hingham
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-sm hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Kingston
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-sm-4 u-space-4 show-lg'>
+                        <a class='h5 text-normal' href='#'>
+                          Cohasett
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Hero Tabs -- Cities Tab -->
+                <input class='cities-tab' id='cities-tab' name='tabs' type='radio'>
+                <label class='tabs-label h2' for='cities-tab'>
+                  Cities
+                  <i class='fa fa-caret-right tabs-label__icon'></i>
+                </label>
+                <div class='tab-content for-cities'>
+                  <h1 class='tab-content__title'>
+                    <div class='show-md show-lg'>
+                      Explore Cities in the South Shore
+                    </div>
+                    <div class='hide-md hide-lg'>
+                      Explore Cities
+                    </div>
+                  </h1>
+                  <div class='row'>
+                    <ul class='u-space-top-3'>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Braintree
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Duxbury
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Hull
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Marshfield
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Quincy
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 c-xs-6 u-space-4'>
+                        <a class='h5 text-normal' href='#'>
+                          Weymouth
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Cohasett
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Hingham
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Kingston
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-sm hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Hingham
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-md-3 c-sm-4 u-space-4 hide-sm hide-xs'>
+                        <a class='h5 text-normal' href='#'>
+                          Kingston
+                        </a>
+                      </li>
+                      <li class='c-lg-2 c-sm-4 u-space-4 show-lg'>
+                        <a class='h5 text-normal' href='#'>
+                          Cohasett
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Hero Content - Show Lg Only -->
+            <div class='hero__content__bottom show-lg'>
+              <div class='contain-content'>
+                <span class='h3'>
+                  Explore Plymouth
+                </span>
+                <a class='h3' href='#'>
+                  Learn More
+                </a>
+              </div>
+              <!-- /.contain-content -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Start Home Section Modules -->
+      <section class='section section--shade search-area'>
+        <div class='contain-content'>
+          <h1 class='section-title hide-xs'>
+            <div class='show-lg show-md'>
+              Search Real Estate on the South Shore
+            </div>
+            <div class='show-sm'>
+              Search For Real Estate
+            </div>
+          </h1>
+          <div class='row search-form-row'>
+            <form>
+              <div class='form-group'>
+                <div class='c-lg-4'>
+                  <input placeholder='Address, Zip or MLS #' type='text'>
+                  <label class='u-hide-text' name='Address'>
+                    Address
+                  </label>
+                  <div class='input-addon show-sm show-xs'>
+                    <button class='button button--orange button--icon' onclick="alert('Thanks for searching!')" type='button'>
+                      <i class='fa fa-search'></i>
+                    </button>
+                  </div>
+                  <div class='additional-options show-sm show-xs'>
+                    <a href='#'>
+                      Additional Options
+                    </a>
+                  </div>
+                </div>
+                <div class='hide-sm hide-xs'>
+                  <div class='c-lg-2 c-md-3'>
+                    <div class='select'>
+                      <select>
+                        <option disabled='' selected=''>
+                          Beds
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class='c-lg-2 c-md-3'>
+                    <div class='select'>
+                      <select>
+                        <option disabled='' selected=''>
+                          Bath
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class='c-lg-2 c-md-3'>
+                    <div class='select'>
+                      <select>
+                        <option disabled='' selected=''>
+                          Min $
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class='c-lg-2 c-md-3'>
+                    <div class='select'>
+                      <select>
+                        <option disabled='' selected=''>
+                          Max $
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class='row hide-sm hide-xs'>
+            <div class='u-text-center'>
+              <button class='button button--orange button--icon' onclick="alert('Thanks for searching!')" type='button'>
+                <i class='fa fa-search'></i>
+                Click here to begin searching real estate in your area
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- /.contain-content -->
+      </section>
+      <!-- /.section.search-area end -->
+      <section class='section featured-neighborhoods'>
+        <div class='contain-content'>
+          <h3 class='section-title'>
+            Featured Neighborhoods
+          </h3>
+          <div class='row'>
+            <div class='c-lg-3 c-sm-6'>
+              <a class='panel-item-link featured-location link-reset link-reset' href='#'>
+                <div class='panel-img'>
+                  <img src='assets/images/featured/featured-1.png'>
+                </div>
+                <div class='panel-body'>
+                  <h5 class='panel-body__title'>
+                    Braxton
+                  </h5>
+                  <div class='featured-description'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class='c-lg-3 c-sm-6'>
+              <a class='panel-item-link featured-location link-reset' href='#'>
+                <div class='panel-img'>
+                  <img src='assets/images/featured/featured-2.png'>
+                </div>
+                <div class='panel-body'>
+                  <h5 class='panel-body__title'>
+                    Beverly Hills
+                  </h5>
+                  <div class='featured-description'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class='c-lg-3 c-sm-6'>
+              <a class='panel-item-link featured-location link-reset' href='#'>
+                <div class='panel-img'>
+                  <img src='assets/images/featured/featured-3.png'>
+                </div>
+                <div class='panel-body'>
+                  <h5 class='panel-body__title'>
+                    Wittington
+                  </h5>
+                  <div class='featured-description'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class='c-lg-3 c-sm-6'>
+              <a class='panel-item-link featured-location link-reset' href='#'>
+                <div class='panel-img'>
+                  <img src='assets/images/featured/featured-4.png'>
+                </div>
+                <div class='panel-body'>
+                  <h5 class='panel-body__title'>
+                    Lankashire
+                  </h5>
+                  <div class='featured-description'>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- /.contain-content -->
+      </section>
+      <!-- /.section.featured end -->
+      <section class='section section section--shade location-tour'>
+        <div class='contain-content'>
+          <h1 class='section-title'>
+            A tour around hingham mass happenings!
+          </h1>
+          <!-- Location Group -->
+          <div class='row u-space-top-6'>
+            <ul class='panel-group-tour u-list-clean'>
+              <li class='c-lg-4 c-md-6'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/property-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      482 Braxford Ave.
+                    </h5>
+                    <div class='panel-listing'>
+                      Real Estate Listing
+                    </div>
+                    <div class='panel-listing info'>
+                      Listing Agent: Victoria Mejia Sanchez
+                      <br>
+                      DRE#: 01187554
+                      <br>
+                      Courtesy of: Rodeo Realty
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 c-md-6'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/food-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      Lorem ipsum dolor sit amet.
+                    </h5>
+                    <div class='panel-listing'>
+                      Blog Category
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 c-md-6 show-lg'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/property-2.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      482 Braxford Ave.
+                    </h5>
+                    <div class='panel-listing'>
+                      Real Estate Listing
+                    </div>
+                    <div class='panel-listing info'>
+                      Listing Agent: Victoria Mejia Sanchez
+                      <br>
+                      DRE#: 01187554
+                      <br>
+                      Courtesy of: Rodeo Realty
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 c-md-6 show-md'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/food-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      Lorem ipsum dolor sit amet.
+                    </h5>
+                    <div class='panel-listing'>
+                      Blog Category
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 c-md-6'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/person-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      Susan Murphy
+                    </h5>
+                    <div class='panel-listing'>
+                      Principle Broker
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 c-md-6 show-md'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/person-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      Susan Murphy
+                    </h5>
+                    <div class='panel-listing'>
+                      Principle Broker
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 c-md-6 show-md show-lg'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/property-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      482 Braxford Ave.
+                    </h5>
+                    <div class='panel-listing'>
+                      Real Estate Listing
+                    </div>
+                    <div class='panel-listing info'>
+                      Listing Agent: Victoria Mejia Sanchez
+                      <br>
+                      DRE#: 01187554
+                      <br>
+                      Courtesy of: Rodeo Realty
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 c-md-6 show-lg'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/food-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      Lorem ipsum dolor sit amet.
+                    </h5>
+                    <div class='panel-listing'>
+                      Blog Category
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 show-lg'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/food-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      Lorem ipsum dolor sit amet.
+                    </h5>
+                    <div class='panel-listing'>
+                      Blog Category
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 show-lg'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/property-1.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      482 Braxford Ave.
+                    </h5>
+                    <div class='panel-listing'>
+                      Real Estate Listing
+                    </div>
+                    <div class='panel-listing info'>
+                      Listing Agent: Victoria Mejia Sanchez
+                      <br>
+                      DRE#: 01187554
+                      <br>
+                      Courtesy of: Rodeo Realty
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class='c-lg-4 show-lg'>
+                <div class='panel-item panel-item--tour'>
+                  <div class='panel-img'>
+                    <img src='assets/images/tour/person-2.png'>
+                  </div>
+                  <div class='panel-body'>
+                    <h5 class='panel-body__title'>
+                      Jason Ocampo
+                    </h5>
+                    <div class='panel-listing'>
+                      Principle Broker
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.contain-content -->
+      </section>
+      <!-- /.section.location-tour end -->
+      <section class='section about-us'>
+        <div class='contain-content'>
+          <div class='row'>
+            <div class='c-lg-6'>
+              <h3 class='section-title'>
+                Welcome to Elite Reality
+              </h3>
+              <div class='panel-img'>
+                <img src='assets/images/video.png'>
+              </div>
+              <div class='panel-body'>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tellus nunc, condimentum eget rhoncus venenatis, dignissim non ligula. Sed nec tortor ipsum. Pellentesque commodo, est eu consectetur fringilla, mauris nibh blandit turpis, a vestibulum. Morbi tellus nunc, condimentum eget rhoncus venenatis.
+              </div>
+              <div class='u-space-5 hide-lg'></div>
+            </div>
+            <div class='c-lg-6'>
+              <h3 class='section-title'>
+                Testimonials
+              </h3>
+              <div class='testimonial-module'>
+                <div class='testimonial__name show-lg'>
+                  <p>
+                    Stacy Clarkson says,
+                  </p>
+                </div>
+                <div class='testimonial__quote'>
+                  <p>
+                    Morbi tellus nunc, condimentum eget rhoncus venenatis, dignissim non ligula. Sed nec tortor ipsum.
+                    <span class='show-lg'>
+                      <br>
+                    </span>
+                    Morbi iaculis semper sodales. Proin id diam quam.
+                    Phasellus vitae erat in pharetra sagittis nec mattis odio. Morbi dignissim lect dignissim non ligula dolor sit amet.
+                  </p>
+                  <a class='read-more show-lg' href='#'>
+                    Read more
+                  </a>
+                </div>
+                <div class='testimonial__name hide-lg'>
+                  <p>
+                    &#45 Stacy Clarkson
+                  </p>
+                </div>
+                <div class='testimonial__carousel'>
+                  <div class='carousel-controls'>
+                    <div class='controls pull-left'>
+                      <i class='fa fa-angle-left'></i>
+                    </div>
+                    <div class='controls pull-right'>
+                      <i class='fa fa-angle-right'></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr class='u-space-8 u-space-top-8'>
+          <div class='row social-feed-row show-lg'>
+            <div class='c-lg-4 instagram'>
+              <h3 class='section-title'>
+                Instagram
+              </h3>
+              <div class='row'>
+                <ul class='panel-group-social'>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/dog.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/people.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/eye.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/radio.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/retro.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/sunset.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/column.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/sprint.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/food.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/dog.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/people.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/eye.png'>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href='#'>
+                View on Instagram
+              </a>
+            </div>
+            <div class='c-lg-4 pinterest'>
+              <h3 class='section-title'>
+                Pinterest
+              </h3>
+              <div class='row'>
+                <ul class='panel-group-social'>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/dog.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/people.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/eye.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/radio.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/retro.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/sunset.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/column.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/sprint.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/food.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/dog.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/people.png'>
+                    </div>
+                  </li>
+                  <li class='c-lg-4'>
+                    <div class='panel-img'>
+                      <img src='assets/images/social/eye.png'>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <a href='#'>
+                View on Pinterest
+              </a>
+            </div>
+            <div class='c-lg-4 facebook'>
+              <h3 class='section-title'>
+                Facebook
+              </h3>
+              <div class='row u-space-4'>
+                <div class='c-lg-4'>
+                  <div class='panel-img'>
+                    <img src='assets/images/social/dog.png'>
+                  </div>
+                </div>
+                <div class='c-lg-8'>
+                  <h5 class='u-space-1'>
+                    Lorem ipsum dolor.
+                  </h5>
+                  <p class='u-space-1'>Lorem ipsum dolor sit amet, consectetur via consectetur.</p>
+                  <a href='#'>
+                    Read More
+                  </a>
+                </div>
+              </div>
+              <div class='row u-space-4'>
+                <div class='c-lg-4'>
+                  <div class='panel-img'>
+                    <img src='assets/images/social/dog.png'>
+                  </div>
+                </div>
+                <div class='c-lg-8'>
+                  <h5 class='u-space-1'>
+                    Lorem ipsum dolor.
+                  </h5>
+                  <p class='u-space-1'>Lorem ipsum dolor sit amet, consectetur via consectetur.</p>
+                  <a href='#'>
+                    Read More
+                  </a>
+                </div>
+              </div>
+              <div class='row u-space-4'>
+                <div class='c-lg-4'>
+                  <div class='panel-img'>
+                    <img src='assets/images/social/dog.png'>
+                  </div>
+                </div>
+                <div class='c-lg-8'>
+                  <h5 class='u-space-1'>
+                    Lorem ipsum dolor.
+                  </h5>
+                  <p class='u-space-1'>Lorem ipsum dolor sit amet, consectetur via consectetur.</p>
+                  <a href='#'>
+                    Read More
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='row get-in-touch-row hide-lg'>
+            <div class='c-md-6'>
+              <h3 class='section-title'>
+                Get in touch
+              </h3>
+              <form class='contact-form-mobile'>
+                <div class='form-group'>
+                  <input placeholder='Full Name' type='text'>
+                  <input placeholder='Email Address' type='text'>
+                  <textarea placeholder='Comments' rows='8'></textarea>
+                </div>
+                <div class='row form-actions'>
+                  <div class='c-lg-12'>
+                    <div class='pull-left u-space-top-2'>
+                      We hate spam too!
+                    </div>
+                    <div class='pull-right'>
+                      <a class='button button--orange' href='#'>
+                        Submit
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class='u-space-5 hide-lg hide-md'></div>
+            <div class='c-md-6'>
+              <h3 class='section-title'>
+                On Facebook
+              </h3>
+              <ul class='simple-list'>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur lorem ipsum
+                  <a href='#'>@adipiscing</a>
+                  sectetur
+                  <a href='#'>http://t.co/7avAnhnG</a>
+                  via
+                  <a href='#'>@pellentesque</a>
+                  eteste amet.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur estet via
+                  <a href='#'>@pellentesque</a>
+                  eteste amet.
+                </li>
+                <li>
+                  Lorem ipsum dolor sit amet, consectetur lorem ipsum
+                  <a href='#'>@adipiscing</a>
+                  sectetur
+                  <a href='#'>http://t.co/7avAnhnG</a>
+                  via
+                  <a href='#'>@pellentesque</a>
+                  eteste amet.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- /.contain-content -->
+      </section>
+      <!-- /.section.about-us end -->
+      <section class='section section section--shade discovery-container'>
+        <div class='contain-content'>
+          <h1 class='section-title'>
+            Where do you want to live in the south shore?
+          </h1>
+          <div class='row u-space-8'>
+            <ul>
+              <li class='c-lg-2 c-md-3 c-sm-3 c-xs-6 u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Braintree
+                </a>
+              </li>
+              <li class='c-lg-2 c-md-3 c-sm-3 c-xs-6 u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Duxbury
+                </a>
+              </li>
+              <li class='c-lg-2 c-md-3 c-sm-3 c-xs-6 u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Hull
+                </a>
+              </li>
+              <li class='c-lg-2 c-md-3 c-sm-3 c-xs-6 u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Marshfield
+                </a>
+              </li>
+              <li class='c-lg-2 c-sm-3 c-xs-6 hide-md u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Quincy
+                </a>
+              </li>
+              <li class='c-lg-2 c-sm-3 c-xs-6 hide-md u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Weymouth
+                </a>
+              </li>
+              <li class='c-lg-2 c-md-3 c-sm-3 c-xs-6 u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Cohasett
+                </a>
+              </li>
+              <li class='c-lg-2 c-md-3 c-sm-3 c-xs-6 u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Hingham
+                </a>
+              </li>
+              <li class='c-lg-2 c-md-3 c-sm-3 c-xs-6 u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Kingston
+                </a>
+              </li>
+              <li class='c-lg-2 c-sm-3 c-xs-6 hide-md u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Plymouth
+                </a>
+              </li>
+              <li class='c-lg-2 c-sm-3 c-xs-6 hide-md u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Scituate
+                </a>
+              </li>
+              <li class='c-sm-3 c-xs-6 show-sm show-xs u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Scituate
+                </a>
+              </li>
+              <li class='c-sm-3 c-xs-6 show-sm show-xs u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Scituate
+                </a>
+              </li>
+              <li class='c-sm-3 c-xs-6 show-sm show-xs u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Scituate
+                </a>
+              </li>
+              <li class='c-sm-3 c-xs-6 show-sm show-xs u-space-4'>
+                <a class='h5 text-normal' href='#'>
+                  Scituate
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- /.contain-content -->
+        <div class='show-lg show-md'>
+          <hr class='hr-full u-space-top-8 u-space-8 show-lg'>
+          <div class='contain-content'>
+            <h1 class='section-title'>
+              What cities are in the South Shore?
+            </h1>
+            <div class='row'>
+              <ul>
+                <li class='c-lg-2 c-md-3 u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Braintree
+                  </a>
+                </li>
+                <li class='c-lg-2 c-md-3 u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Duxbury
+                  </a>
+                </li>
+                <li class='c-lg-2 c-md-3 u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Hull
+                  </a>
+                </li>
+                <li class='c-lg-2 c-md-3 u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Marshfield
+                  </a>
+                </li>
+                <li class='c-lg-2 hide-md u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Quincy
+                  </a>
+                </li>
+                <li class='c-lg-2 hide-md u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Weymouth
+                  </a>
+                </li>
+                <li class='c-lg-2 c-md-3 u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Cohasett
+                  </a>
+                </li>
+                <li class='c-lg-2 c-md-3 u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Hingham
+                  </a>
+                </li>
+                <li class='c-lg-2 c-md-3 u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Kingston
+                  </a>
+                </li>
+                <li class='c-lg-2 hide-md u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Plymouth
+                  </a>
+                </li>
+                <li class='c-lg-2 hide-md u-space-4'>
+                  <a class='h5 text-normal' href='#'>
+                    Scituate
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /.contain-content -->
+        </div>
+      </section>
+      <!-- /.section.discovery end -->
+    </main>
+    <!-- /.main end -->
+    <footer>
+      <nav class='footer-nav show-lg show-md'>
+        <div class='contain-content'>
+          <ul>
+            <il>
+              <a href='#'>
+                Home
+              </a>
+            </il>
+            <il>
+              <a href='#'>
+                Properties
+              </a>
+            </il>
+            <li>
+              <a href='#'>
+                Communities
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                Services
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                Our Team
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /.contain-content -->
+      <hr class='show-lg show-md'>
+      <div class='footer-social-row'>
+        <div class='contain-content'>
+          <div class='u-space-10 clearfix show-lg show-md'></div>
+          <ul>
+            <li>
+              <a href='#'>
+                <img src='assets/images/footer/rss.png'>
+                RSS
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src='assets/images/footer/linkedin.png'>
+                LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src='assets/images/footer/youtube.png'>
+                YouTube
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src='assets/images/footer/facebook.png'>
+                Facebook
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src='assets/images/footer/pinterest.png'>
+                Pinterest
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src='assets/images/footer/twitter.png'>
+                Twitter
+              </a>
+            </li>
+            <li>
+              <a href='#'>
+                <img src='assets/images/footer/news.png'>
+                News
+              </a>
+            </li>
+          </ul>
+          <div class='u-space-8 clearfix'></div>
+        </div>
+      </div>
+      <!-- /.contain-content -->
+      <div class='footer-location-row'>
+        <div class='contain-content'>
+          We're based in Plymouth, Massachusetts.
+          <div class='small-text'>
+            We work with clients from all over. Get in touch with us, we're friendly!
+          </div>
+        </div>
+        <!-- /.contain-content -->
+      </div>
+      <div class='footer-contact-info'>
+        <ul>
+          <li class='u-space-top-5'>
+            <i class='fa fa-envelope'></i>
+            <div class='contact'>
+              <a href='#'>hello@eEliteRealty.com</a>
+            </div>
+          </li>
+          <li class='u-space-top-5'>
+            <i class='fa fa-phone'></i>
+            <div class='contact'>+1 (408) 555 5555</div>
+          </li>
+          <li class='u-space-top-5'>
+            <i class='fa fa-home'></i>
+            <div class='contact'>
+              Alante Real Estate
+              <div class='home-address'>
+                682, West Rd, New York, 12948
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <hr class='u-space-top-5'>
+        <div class='copyright'>
+          <div class='contain-content'>
+            &copy; 2012 eElite Realty.
+            <span class='hide-sm hide-xs'>
+              All Rights Reserved
+            </span>
+            |  Real Estate Advertising by Placester
+          </div>
+          <!-- /.contain-content -->
+        </div>
+      </hr>
+    </footer>
+  </body>
+</html>

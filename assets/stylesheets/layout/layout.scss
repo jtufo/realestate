@@ -1,0 +1,32 @@
+// ==========================================================================
+// This stylesheet contains global layout classes
+// ==========================================================================
+
+.contain-content {
+  margin: 0 auto;
+  max-width: 980px;
+  padding: {
+    left: ($grid-space*2);
+    right: ($grid-space*2);
+  }
+}
+
+.section {
+  padding: 4.5% 0 5.5%;
+
+  .section-title {
+    margin-bottom: 4%;
+  }
+
+  h3 {
+    color: $color-gray;
+  }
+
+  &.section--shade {
+    background: $color-gray-light;
+
+    .section-title {
+      text-align: center;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+// ==========================================================================
+// These classes make up the responsive grid
+// ==========================================================================
+
+@each $slug, $size in $breakpoints {
+  @media (min-width: #{$size}) {
+    @for $i from 1 through $grid-columns {
+      .c-#{$slug}-#{$i} {
+        float: left;
+        width: ( $i /$grid-columns ) * 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: $breakpoint-sm-max) {
+  @for $i from 1 through $grid-columns {
+    .c-xs-#{$i} {
+      float: left;
+      width: ( $i / $grid-columns ) * 100%;
+    }
+  }
+}
+
+div[class^="c-"],
+li[class^="c-"] {
+  min-height: 1px;
+  padding: {
+    left: $grid-space;
+    right: $grid-space;
+  }
+  position: relative;
+}
+
+.row {
+  @extend .clearfix;
+  margin: {
+    left: -$grid-space;
+    right: -$grid-space;
+  }
+}

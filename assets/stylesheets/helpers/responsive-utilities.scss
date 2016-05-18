@@ -1,0 +1,50 @@
+// ==========================================================================
+// This stylesheet contains utilities specific to responsive show/hide
+// ==========================================================================
+
+.show-xs,
+.show-sm,
+.show-md,
+.show-lg,
+.show-xs-inline,
+.show-sm-inline,
+.show-md-inline,
+.show-lg-inline {
+  display: none !important;
+}
+
+@media (max-width: $breakpoint-sm-max) {
+  @include visibility('.show-sm');
+  @include visibility('.show-sm-inline');
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md-max) {
+  @include visibility('.show-sm');
+  @include visibility-inline('.show-sm-inline');
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg-max) {
+  @include visibility('.show-md');
+  @include visibility-inline('.show-md-inline');
+}
+
+@media (min-width: $breakpoint-lg) {
+  @include visibility('.show-lg');
+  @include visibility-inline('.show-lg-inline');
+}
+
+@media (max-width: $breakpoint-sm-max) {
+  @include invisibility('.hide-xs');
+}
+
+@media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md-max) {
+  @include invisibility('.hide-sm');
+}
+
+@media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg-max) {
+  @include invisibility('.hide-md');
+}
+
+@media (min-width: $breakpoint-lg) {
+  @include invisibility('.hide-lg');
+}

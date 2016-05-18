@@ -1,0 +1,65 @@
+// ==========================================================================
+// This stylesheet contains testimonial component classes
+// ==========================================================================
+
+.testimonial-module {
+  font: {
+    size: 20px;
+    style: italic;
+  }
+  padding: 0 0 100px 80px;
+  position: relative;
+
+  @media (max-width: $breakpoint-sm-max) {
+    padding-left: 45px;
+  }
+
+  &::before {
+    color: $color-gray;
+    content: '\f10d';
+    font: {
+      family: FontAwesome;
+      size: 28px;
+      style: normal;
+    }
+    left: 20px;
+    position: absolute;
+    top: 0;
+
+    @media (max-width: $breakpoint-sm-max) {
+      left: 0;
+    }
+  }
+
+  .testimonial__name {
+    color: $color-gray-dark;
+  }
+
+  .testimonial__quote {
+    color: #000000;
+
+    a.read-more {
+      font-size: 16px;
+    }
+  }
+
+  .testimonial__carousel {
+    .carousel-controls {
+      @include absolute-center(146px);
+      bottom: 0;
+    }
+
+    .controls {
+      $size: 64px;
+      @include vendor-prefix(border-radius, 50%);
+      background: $color-white;
+      color: $color-gray;
+      cursor: pointer;
+      font-size: 52px;
+      height: $size;
+      line-height: 57px;
+      text-align: center;
+      width: $size;
+    }
+  }
+}
